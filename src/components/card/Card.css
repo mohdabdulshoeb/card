@@ -12,7 +12,7 @@
     width: 27%;
     margin: auto;
     /* border: 1px solid red; */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(177, 176, 176, 0.35) 0px 5px 15px;
     border-radius: 10px;
     text-align: center;
 
@@ -56,14 +56,16 @@ line-height: 24px; /* 150% */
     
 }
 .cont11{
+    justify-content: center;
     display: flex;
     text-align: center;
-    margin-left:400px
+    
+    /* margin-left:400px */
     
 }
 .cont11 h1{
     color: #101828;
-    margin-left: 200px;
+    /* margin-left: 600px; */
 font-family: Inter;
 font-size: 36px;
 font-style: normal;
@@ -74,14 +76,12 @@ letter-spacing: -0.72px;
 .cont12{
     display: flex;
     text-align: center;
-    margin-left:500px
-    
-    
-    
+    /* margin-left:500px */
+            
 }
 .cont12 p{
     color: #050408;
-margin-left: 200px;
+/* margin-left: 650px; */
 /* Text md/Semibold */
 font-family: Inter;
 font-size: 16px;
@@ -124,5 +124,45 @@ line-height: 30px; /* 150% */
     }
 }
 .cont12{
-    width: 90%;
+    justify-content: center;
+    width: 100%;
+}
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .cont {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cont div {
+        width: 100%; /* Adjust width for smaller screens */
+        margin: 10px auto; /* Modify margins for better spacing */
+    }
+
+    .cont11, .cont12, .cont13 {
+        margin-left: 0; /* Reset margin for mobile layout */
+        text-align: center; /* Center align for better readability */
+    }
+
+    .cont1 img {
+        width: 40%; /* Reduce image size for smaller screens */
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .cont11 h1 {
+        /* margin-left: 0; Reset margin for mobile layout */
+        font-size: 28px; /* Decrease font size for smaller screens */
+        line-height: 36px; /* Adjust line height for readability */
+    }
+
+    .cont12 p {
+        margin-left: 158px;
+    font-size: 14px;
+    line-height: 20px;
+    }
+
+    .cont13 h1 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        line-height: 24px; /* Adjust line height for readability */
+    }
 }

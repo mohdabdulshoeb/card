@@ -78,3 +78,12 @@
     box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+    .cont11, .cont12, .cont13 {
+        /* Adjust the size or any other styles for these elements here */
+        /* For example: */
+        font-size: 14px; /* Adjust the font size */
+        /* You can add more size-related styles here */
+    }
+}
+</style>

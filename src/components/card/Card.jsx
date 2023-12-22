@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 const Card = () => {
   return (
-    <>
+    <div>
     <div className='cont12'> 
     <p>Tutors</p></div>
     <div className='cont11'> 
@@ -59,7 +59,7 @@ const Card = () => {
         <FaLinkedin style={{ color: '#98A2B3' }}/></a>
         </div>
     </div>
-    </>
+    </div>
   )
 }
 
